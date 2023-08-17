@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossfit with a little bit of spice</title>
+    <link rel="stylesheet" href="/static/indexstyle.css">
+    <script src="/static/script.js"></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <h1>Crossfit Athlete Projected Benchmark Scores</h1>
+        <p>This application will allow you to generate a projected score for several
+            benchmark WODs
+        </p>
+    </div>
+    <div class="cards">
+        <div class="predict">
+            <div class="innerP">
+                <h3>Choose a workout to make a prediction</h3>
+                <label>Lift Weight</label>
+                <form method="POST">
+                <select name="workout" id="workoutselector">
+                    <option value="Clean and Jerk">Clean and Jerk</option>
+                    <option value="Deadlift">Deadlift</option>
+                    <option value="Snatch">Snatch</option>
+                </select>
+                <br>
+                <input type="number" id="weight" name="Weight" min="1" value="1">
+                <br>
+                <br>
+                <label>Benchmark</label>
+                <br>
+                <select name="benchmark" id="benchmarkselector">
+                    <option value="Fran">Fran</option>
+                    <option value="Helen">Helen</option>
+                    <option value="Grace">Grace</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="submit">
+                <br>
+                <br>
+                <form method="GET">
+                    <p>Projected Score: </p>
+                    <output name="result">{{result}}</output>
+                    </form>
+            </form>
+            </div>
+            <div class="result">
+               
+            </div>
+        </div>
+
+        <div class="general">
+            <div class="innerG">
+                <h3>Choose a workout combination to see the overall scatter plot</h3>
+                <label>combinations</label>
+                <select name="workout" id="comboselector">
+                    <option value="fran_clean">Fran and Clean</option>
+                    <option value="fran_dead">Fran and Deadlift</option>
+                    <option value="fran_snatch">Fran and Snatch</option>
+                    <option value="grace_clean">Grace and Clean</option>
+                    <option value="grace_dead">Grace and Deadlift</option>
+                    <option value="grace_snatch">Grace and Snatch</option>
+                    <option value="helen_clean">Helen and Clean</option>
+                    <option value="helen_dead">Helen and Deadlift</option>
+                    <option value="helen_snatch">Helen and Snatch</option>
+                </select>
+                <br>
+                <button id="button" type="submit" name="submit">Submit</button>
+                <div class="image">
+                    <img id="plot" src="static/images/crossfit-llc-logo-vector.png"></img>
+                </div>
+            </div>
+        </div>
+
+        <div class="support">
+            <div class="innerG">
+                <h3>If you would like to help support this project please consider donating your information</h3>
+                <p>Follow this link to answer a breif survey on your stats: <a href
+                        src="https://forms.gle/dDTfKiP2objLzjra9"> Visit google forms</a></p>
+                <p>If you would like to contribute to this code please visit my <a href
+                        src="https://github.com/paradoxl/Crossfit-Benchmark-Analysis">Github</a> where you can view the
+                    source code</p>
+                <p>Depending on the feedback from this project and the amount of data collected, other combinations will
+                    be added to the model. Star our github repo to keep up to date.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="notes">
+        <h3>Built with &hearts; by Michael Evans </h1>
+    </div>
+</body>
+
+</html>

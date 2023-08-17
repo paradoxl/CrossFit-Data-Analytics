@@ -1,0 +1,95 @@
+.topbar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.predict{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: black;
+    height: 500px;
+    width: 500px;
+  
+}
+
+.innerP{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+.general{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: black;
+    height: 500px;
+    width: 500px;
+    margin: 10px;
+ 
+}
+
+.innerG{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+}
+#plot{
+    height: 250px;
+    width: 500px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support{
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: black;
+    height: 500px;
+    width: 500px;
+ 
+}
+
+.notes{
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
